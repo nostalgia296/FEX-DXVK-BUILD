@@ -14,7 +14,7 @@ c = 'arm64ec-w64-mingw32-clang'
 cpp = 'arm64ec-w64-mingw32-clang++'
 ld = 'arm64ec-w64-mingw32-lld'
 windres = 'arm64ec-w64-mingw32-windres'
-strip = 'arm64ec-w64-mingw32-strip'
+strip = 'llvm-strip'
 widl = 'arm64ec-w64-mingw32-widl'
 pkgconfig = 'aarch64-linux-gnu-pkg-config'
 

@@ -1,0 +1,22 @@
+name: Build "FEX"
+
+on:
+  workflow_dispatch:
+
+jobs:
+  start_building_fex:
+    runs-on: ubuntu-24.04
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Execute build script
+      run: bash ./arm64ec_fex_build.sh
+
+    - name: Release "FEX"
+      uses: softprops/action-gh-release@v1
+      with:
+        body: FEX BUILD
+        tag_name: FEX
+        name: FEX BUILD
+        files: |
+           /tmp/FEX/**

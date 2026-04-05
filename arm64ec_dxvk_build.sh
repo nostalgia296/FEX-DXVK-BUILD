@@ -29,9 +29,6 @@ EOF
 
 meson setup arm64ec-build -Db_ndebug=if-release --cross-file "./build-arm64ec.txt" --buildtype "release" --prefix "/tmp/dxvk" --libdir "arm64ec" --strip 
 
-ninja -C arm64ec-build
-
-sudo ninja install
-
+sudo ninja -C arm64ec-build install
 cd /tmp/dxvk
 tar -cf dxvk-arm64ec.tar arm64ec && zstd -19 dxvk-arm64ec.tar --rm 

@@ -1,0 +1,1 @@
+用github action构建arm64ec和arm64的fex

@@ -31,4 +31,4 @@ ninja
 sudo ninja install
 
 cd /tmp/dxvk
-tar -cf dxvk-arm64ec.tar arm64ec && zstd -19 dxvk-arm64ec.tar --rm 
+sudo tar -cf dxvk-arm64ec.tar arm64ec && sudo zstd -19 dxvk-arm64ec.tar --rm 

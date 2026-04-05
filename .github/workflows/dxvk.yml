@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  start_building_fex:
+  start_building_dxvk:
     runs-on: ubuntu-24.04
     steps:
     - uses: actions/checkout@v3

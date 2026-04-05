@@ -1,4 +1,4 @@
-sudo apt install wget unzip glslang-tools zstd meson ninja-build -y
+sudo apt install wget unzip glslang-tools zstd meson ninja-build binutils -y
 WORKDIR=$(pwd)
 wget https://github.com/bylaws/llvm-mingw/releases/download/20250920/llvm-mingw-20250920-ucrt-ubuntu-22.04-x86_64.tar.xz
 tar -xf llvm-mingw-20250920-ucrt-ubuntu-22.04-x86_64.tar.xz
@@ -14,7 +14,6 @@ c = 'arm64ec-w64-mingw32-clang'
 cpp = 'arm64ec-w64-mingw32-clang++'
 ld = 'arm64ec-w64-mingw32-lld'
 windres = 'arm64ec-w64-mingw32-windres'
-strip = 'llvm-strip'
 widl = 'arm64ec-w64-mingw32-widl'
 pkgconfig = 'aarch64-linux-gnu-pkg-config'
 

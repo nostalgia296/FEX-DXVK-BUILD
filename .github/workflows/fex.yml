@@ -19,12 +19,12 @@ jobs:
       id: date
       run: echo "DATE=$(date +'%Y%m%d')" >> $GITHUB_OUTPUT
 
-    - name: Release "FEX"
+    - name: Release "DXVK+FEX"
       uses: softprops/action-gh-release@v1
       with:
-        body: FEX BUILD
+        body: DXVK+FEX BUILD
         tag_name: ${{ steps.date.outputs.DATE }}
-        name: FEX BUILD ${{ steps.date.outputs.DATE }}
+        name: DXVK+FEX BUILD ${{ steps.date.outputs.DATE }}
         files: |
            /usr/lib/wine/aarch64-windows/libarm64ecfex.dll
            /usr/lib/wine/aarch64-windows/libwow64fex.dll

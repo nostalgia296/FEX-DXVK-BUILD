@@ -17,11 +17,11 @@ jobs:
       id: date
       run: echo "DATE=$(date +'%Y%m%d')" >> $GITHUB_OUTPUT
 
-    - name: Release "DXVK"
+    - name: Release "DXVK+FEX"
       uses: softprops/action-gh-release@v1
       with:
-        body: DXVK BUILD
+        body: DXVK+FEX BUILD
         tag_name: ${{ steps.date.outputs.DATE }}
-        name: DXVK BUILD ${{ steps.date.outputs.DATE }}
+        name: DXVK+FEX BUILD ${{ steps.date.outputs.DATE }}
         files: |
            /tmp/dxvk/dxvk-arm64ec.tar.zst

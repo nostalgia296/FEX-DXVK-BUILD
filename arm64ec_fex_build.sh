@@ -19,5 +19,3 @@ cmake -GNinja -DCMAKE_BUILD_TYPE=Release -DCMAKE_TOOLCHAIN_FILE=../Data/CMake/to
 ninja
 sudo ninja install
 cd ..
-sudo llvm-strip /usr/lib/wine/aarch64-windows/libarm64ecfex.dll
-sudo llvm-strip /usr/lib/wine/aarch64-windows/libwow64fex.dll
